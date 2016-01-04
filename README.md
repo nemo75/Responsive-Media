@@ -1,5 +1,23 @@
-Responsive & Media Queries
-===================
+Responsive & MediaQueries
+=======================
+
+
+Ceci est un tutoriel sur le Responsive et les MediaQueries. Ce tutoriel va montrer comment les MediaQueries vont permettre de faire un site internet Responsive.
+
+----------
+
+#Qu'est ce que le responsive design et les medias queries?
+----------
+
+##Le responsive design
+----------
+Le responsive design permet d'afficher un site internet sur différents supports tels que les desktop, les laptops, les tablettes et les smartphones. Le site s'adapte en fonction de la taille de l'écran sur lequel il est lu.
+
+![Alt text] (http://jmgraphcom.com/wp-content/uploads/2016/01/responsive-design.png (47KB)
+
+)
+
+----------
 
 
 Les **Media Queries** permettent de donner des propriétés spécifique pour chaque tailles d'écrans. 
