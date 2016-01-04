@@ -37,7 +37,8 @@ Les deux codes ci-dessus font exactement la même chose.
 --------
 ##Pour laisser l'OS calculer la taille
 dans le HTML :
-```<meta name="viewport" content="initial-scale=1.0" />
+```
+<meta name="viewport" content="initial-scale=1.0" />
 <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
 ```
 --------
@@ -82,8 +83,8 @@ img {
 }
 ```
 
-Pour les background:
-===================
+##Pour les background:
+
 *Avec aucun background-size (l’image est placée telle qu’elle dans le bloc et on découpe ce qui dépasse)
 *Avec background-size: contain (on redimetionne l’image pour qu’elle soit entièrement visible)
 *Avec background-size: cover (on agrandit l’image en conservant les proportions pour qu’elle recouvre tout, puis on découpe ce qui dépasse en bas)
@@ -92,13 +93,19 @@ Pour les background:
 Notez que l’on peut également jouer avec background-position et background-repeat pour obtenir d’autres effets.
 
 
-Pour les tableaux
-===============
+##Pour les tableaux
+
 Avec ce code CSS le tableau s'étirera en longueur et créera des sous parti les unes en dessous des autres:
 ```
-table, tbody { display: block; }
-tr { display: table; }
-td { display: table-row; }
+table, tbody { 
+	display: block; 
+	}
+tr { 
+	display: table; 
+	}
+td { 
+	display: table-row; 
+	}
 ```
 Pour que les tableau garde ces paramètres à l'horizontal ce qui donne un travail moins propre mais peut être plus lisible en découpant le tableau en morceaux et les mettre les uns en dessous des autres:
 ```
@@ -124,8 +131,8 @@ Pour que les tableau garde ces paramètres à l'horizontal ce qui donne un trava
 }
 ```
 
-Pour gérer les flottants
-================
+##Pour gérer les flottants
+
 
 Ceci n’est pas pratique quand on redimensionne la page : les éléments sortent de leur cadre et masquent le contenu suivant.
 
@@ -152,17 +159,19 @@ ul.menu li {
 }
 ```
 
-Pour les lignes trop longues :
-====================
+
 
 Dans le CSS:
 
 ```
-	body { word-wrap: break-word; }
-	pre { white-space: pre-wrap; } /* pour firefox et les <pre> */
+	body { 
+		word-wrap: break-word;
+		 }
+	pre { 
+		white-space: pre-wrap; 
+		} /* pour firefox et les <pre> */
 ```
 
 Le texte ne déformera alors plus les blocs, mais sera remis à la ligne.
 
 ##La tailles des polices:
-========================
