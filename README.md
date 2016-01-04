@@ -40,10 +40,11 @@ dans le HTML :
 ```<meta name="viewport" content="initial-scale=1.0" />
 <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
 ```
-
+--------
 ##Pour le posistionnement (entête, pied de page, partie principale, colonne latérale):
 
-```/* CSS Normal */
+```
+/* CSS Normal */
 *#sidebar {
    float: right;
    width: 200px;
@@ -74,7 +75,6 @@ En revanche, il est possible de faire plein de choses nouvelles sur un écran ta
 Donner la taille dans le HTML pour que l'OS calcule lui même l'adaptation à l'écran.
 Dans le html :
 ```
-
 <img src="image.jpg" alt="lorem ipsum" height="320" width="640">
 img {
     max-width: 100%;
@@ -82,7 +82,8 @@ img {
 }
 ```
 
-##Pour les background:
+Pour les background:
+===================
 *Avec aucun background-size (l’image est placée telle qu’elle dans le bloc et on découpe ce qui dépasse)
 *Avec background-size: contain (on redimetionne l’image pour qu’elle soit entièrement visible)
 *Avec background-size: cover (on agrandit l’image en conservant les proportions pour qu’elle recouvre tout, puis on découpe ce qui dépasse en bas)
@@ -91,10 +92,11 @@ img {
 Notez que l’on peut également jouer avec background-position et background-repeat pour obtenir d’autres effets.
 
 
-##Pour les tableaux
-
+Pour les tableaux
+===============
 Avec ce code CSS le tableau s'étirera en longueur et créera des sous parti les unes en dessous des autres:
-```table, tbody { display: block; }
+```
+table, tbody { display: block; }
 tr { display: table; }
 td { display: table-row; }
 ```
@@ -121,11 +123,13 @@ Pour que les tableau garde ces paramètres à l'horizontal ce qui donne un trava
 }
 ```
 
-##Pour gérer les flottants
+Pour gérer les flottants
+================
 
 Ceci n’est pas pratique quand on redimensionne la page : les éléments sortent de leur cadre et masquent le contenu suivant.
 
 Au lieu de faire des float utiliser plutôt en CSS le inline-block:
+
 ```ul.menu {
 }
 
@@ -146,7 +150,8 @@ ul.menu li {
 }
 ```
 
-##Pour les lignes trop longues:
+Pour les lignes trop longues :
+====================
 
 Dans le CSS:
 
@@ -158,3 +163,4 @@ Dans le CSS:
 Le texte ne déformera alors plus les blocs, mais sera remis à la ligne.
 
 ##La tailles des polices:
+========================
