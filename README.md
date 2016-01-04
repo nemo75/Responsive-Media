@@ -101,7 +101,8 @@ tr { display: table; }
 td { display: table-row; }
 ```
 Pour que les tableau garde ces paramètres à l'horizontal ce qui donne un travail moins propre mais peut être plus lisible en découpant le tableau en morceaux et les mettre les uns en dessous des autres:
-```@media (max-width: 600px) {
+```
+@media (max-width: 600px) {
     table tr th:nth-of-type(2),
     table tr td:nth-of-type(2) {
         display: none;
@@ -130,7 +131,8 @@ Ceci n’est pas pratique quand on redimensionne la page : les éléments sorten
 
 Au lieu de faire des float utiliser plutôt en CSS le inline-block:
 
-```ul.menu {
+```
+ul.menu {
 }
 
 ul.menu li {
