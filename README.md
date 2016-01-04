@@ -71,7 +71,10 @@ Sur l’ordi, on pouvait utiliser les effet de survol et de clic pour déclenche
 En revanche, il est possible de faire plein de choses nouvelles sur un écran tactile, comme le « swipe » pour passer d’une page à une autre ou utiliser divers actions utilisant le multi-touch. Pensez-y quand vous faites un site mobile !
 
 ##Pour les images
-```Donner la taille dans le HTML pour que l'OS calcule lui même l'adaptation à l'écran.
+Donner la taille dans le HTML pour que l'OS calcule lui même l'adaptation à l'écran.
+Dans le html :
+```
+
 <img src="image.jpg" alt="lorem ipsum" height="320" width="640">
 img {
     max-width: 100%;
@@ -144,9 +147,12 @@ ul.menu li {
 ```
 
 ##Pour les lignes trop longues:
+
 Dans le CSS:
-```body { word-wrap: break-word; }
-pre { white-space: pre-wrap; } /* pour firefox et les <pre> */
+
+```
+	body { word-wrap: break-word; }
+	pre { white-space: pre-wrap; } /* pour firefox et les <pre> */
 ```
 
 Le texte ne déformera alors plus les blocs, mais sera remis à la ligne.
