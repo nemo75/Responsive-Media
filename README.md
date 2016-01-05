@@ -11,7 +11,7 @@ Ceci est un tutoriel sur le Responsive et les MediaQueries. Ce tutoriel va montr
 
 ##Le responsive design
 ----------
-Le responsive design permet d'afficher un site internet sur différents supports tels que les desktop, les laptops, les tablettes et les smartphones. Le site modifie son apparence en fonction de la taille de l'écran sur lequel il est lu.
+Le responsive design permet d'afficher un site internet sur différents supports tels que les desktop, les laptops, les tablettes et les smartphones. Le site modifie son apparence en fonction de la taille de l'écran sur lequel il est lu. Son avantage par rapport au type statique est d'avoir un seul site qui répond à une multitude de taille d'écran.
 
 ![Alt text] (http://jmgraphcom.com/wp-content/uploads/2016/01/responsive-design.png)
 
@@ -19,13 +19,24 @@ Le responsive design permet d'afficher un site internet sur différents supports
 
 
 Les **Media Queries** permettent de donner des propriétés spécifique pour chaque tailles d'écrans. 
-On peut les utilisées directement dans la page **css** global, ou dans un fichier **css** appart. 
+On peut les utiliser directement dans la page **css** global, ou dans un fichier **css** appart.
 
+Le principe est de définir des largeurs d'écran avec la synthaxe:
+
+```
+@media screen and (min-width: 940px){
+  body {
+    background-color: grey;
+  }
+}
+```
+On se base sur des breakpoints, des tailles d'écran définis : mobile-first, 940px et 1400px.
+L'ordre dans lequel on les dispose est important car le suivant écrase le précédent.
 ----------
 #### <i class="icon-file"></i> Dans la page css globale
 ```
 @media  screen and (min-width: 300px) and (max-width: 600px) {
-	.div {
+	body {
 		background-color:red;
 		}
 	}
@@ -150,7 +161,7 @@ Pour que les tableau garde ces paramètres à l'horizontal ce qui donne un trava
 ##Pour gérer les flottants
 
 
-Ceci n’est pas pratique quand on redimensionne la page : les éléments sortent de leur cadre et masquent le contenu suivant.
+Même si cela marche avec des float, ceci n’est pas pratique quand on redimensionne la page : les éléments sortent de leur cadre et masquent le contenu suivant.
 
 Au lieu de faire des float utiliser plutôt en CSS le inline-block:
 
