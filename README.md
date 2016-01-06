@@ -36,7 +36,7 @@ L'ordre dans lequel on les dispose est important car le suivant écrase le préc
 ### Différentes valeurs de @media
 Depuis CSS2, @media peut prendre les valeurs suivantes :
 * screen : Écran
-* handheld : pour des périqphériques mobiles ou de petite taille
+* handheld : pour des périphériques mobiles ou de petite taille
 * print : pour le format d'impression
 * aural (CSS2) / speech (CSS 2.1) : pour les synthèses vocales
 * braille : pour les plages braille
@@ -59,23 +59,7 @@ On les intègre dans le CSS de cette manière :
 }
 ```
 
-### Synthaxe des Media Queries
-Les Media Queries possèdent une synthaxe qui permet d'affiner les critères de sélection. On peut donc combiner des  valeurs en utilisant `and`, `only` et `not`. On utilise la virgule en lieu et place du "ou" logique.
-En général, on combine un type de media à une expression avec `and`, mais on peut n'utiliser qu'une expression entre parenthèse.
-On peut déclarer les Media Queries de deux manières.
-Dans le HTML:
-```
-<link rel="stylesheet" media="screen and (max-width: 640px)" href="smallscreen.css" type="text/css" />
-```
-ou dans le CSS:
-```
-@media screen and (max-width: 640px) {
-  .bloc {
-    display:block;
-    clear:both;
-  }
-}
-```
+
 
 # CETTE SECTION EST À COMPLÉTER AVEC DES EXEMPLES (PLEASE)
 
@@ -97,6 +81,11 @@ Les critères (ou fonctionalités) dans les expressions peuvent avoir différent
 * width : dimension en largeur de la zone d'affichage
 
 ----------
+### Synthaxe des Media Queries
+Les Media Queries possèdent une synthaxe qui permet d'affiner les critères de sélection. On peut donc combiner des  valeurs en utilisant `and`, `only` et `not`. On utilise la virgule en lieu et place du "ou" logique.
+En général, on combine un type de media à une expression avec `and`, mais on peut n'utiliser qu'une expression entre parenthèse.
+On peut déclarer les Media Queries de deux manières.
+
 #### <i class="icon-file"></i> Dans la page css globale
 ```
 @media  screen and (min-width: 300px) and (max-width: 600px) {
