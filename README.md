@@ -362,16 +362,20 @@ Il suffit d’appliquer une transition de durée 0s sur le right, mais différé
 ```
 
 SOURCES - 
-*http://mediaqueri.es/
-*http://www.adobe.com/devnet/archive/dreamweaver/articles/introducing-media-queries.html
-*tuto en français sur MDN : https://developer.mozilla.org/fr/docs/Web/CSS/Media_queries
-*http://objetdirect.developpez.com/tutoriels/css/responsive-design/ > paragraphe V : Media Queries et paragraphe VI un exemple 
-*http://www.alsacreations.com/article/lire/930-css3-media-queries.html > Les bases des Media Queries + Exemples + Demo
+* http://mediaqueri.es/
+
+* http://www.adobe.com/devnet/archive/dreamweaver/articles/introducing-media-queries.html
+
+* tuto en français sur MDN : https://developer.mozilla.org/fr/docs/Web/CSS/Media_queries
+
+* http://objetdirect.developpez.com/tutoriels/css/responsive-design/ > paragraphe V : Media Queries et paragraphe VI un exemple 
+
+* http://www.alsacreations.com/article/lire/930-css3-media-queries.html > Les bases des Media Queries + Exemples + Demo
 
 ###Retour sur expérience:
     
-    Les Media Queries sont un moyen d'adapter son site à tout les formats d'écrans, de le rendre responsive
+Les Media Queries sont un moyen d'adapter son site à tout les formats d'écrans, de le rendre responsive
 
-    Eviter d'utiliser la vue adaptative de Firefox pour les tests, privilégier celle de Chrome ou Chromium ! La base de la mise en forme doit d'abord etre conçue pour les mobiles
-    
-    , à partir de là, rajouter les Media Queries pour les autres formats d'écrans. (tablette, moyen, grand écran..)
+Eviter d'utiliser la vue adaptative de Firefox pour les tests, privilégier celle de Chrome ou Chromium ! La base de la mise en forme doit d'abord etre conçue pour les mobiles
+
+, à partir de là, rajouter les Media Queries pour les autres formats d'écrans. (tablette, moyen, grand écran..)
