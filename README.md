@@ -376,6 +376,4 @@ SOURCES -
     
 Les Media Queries sont un moyen d'adapter son site à tout les formats d'écrans, de le rendre responsive
 
-Eviter d'utiliser la vue adaptative de Firefox pour les tests, privilégier celle de Chrome ou Chromium ! La base de la mise en forme doit d'abord etre conçue pour les mobiles
-
-, à partir de là, rajouter les Media Queries pour les autres formats d'écrans. (tablette, moyen, grand écran..)
+Eviter d'utiliser la vue adaptative de Firefox pour les tests, privilégier celle de Chrome ou Chromium ! La base de la mise en forme doit d'abord etre conçue pour les mobiles, à partir de là, rajouter les Media Queries pour les autres formats d'écrans. (tablette, moyen, grand écran..)
