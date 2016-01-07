@@ -18,7 +18,7 @@ Le responsive design permet d'afficher un site internet sur différents supports
 ----------
 
 
-Les **Media Queries** permettent de donner des propriétés spécifiques à chaque tailles d'écrans. 
+Les **Media Queries** permettent de donner des propriétés spécifiques à chaque taille d'écran. 
 On peut les utiliser directement dans la page **css** global, ou dans un fichier **css** à part.
 
 Le principe est de définir des largeurs d'écran avec la synthaxe:
@@ -69,59 +69,59 @@ On les intègre dans le CSS de cette manière :
 Les critères (ou fonctionalités) dans les expressions peuvent avoir différents types:
 
 * color : pour le support de la couleur (bits/pixels)
-	* Exemple :
-	Pour appliquer une feuille de style sur les périphériques avec au moins 4 bits par composante de couleur :
-	`@media all and (min-color: 4) { ... }`
+        * Exemple :
+        Pour appliquer une feuille de style sur les périphériques avec au moins 4 bits par composante de couleur :
+        `@media all and (min-color: 4) { ... }`
 * color-index : pour les périphériques utilisant une table de couleurs indexées
-	* Exemple :
-	 Pour indiquer qu'une feuille de style doit s'appliquer à tous les périphériques dont les couleurs sont indexées, vous pouvez utiliser :
-	`@media all and (color-index) { ... }`
+        * Exemple :
+         Pour indiquer qu'une feuille de style doit s'appliquer à tous les périphériques dont les couleurs sont indexées, vous pouvez utiliser :
+        `@media all and (color-index) { ... }`
 * device-aspect-ratio : ratio du périphérique de sortie (par exemple 16/9)
-	* Exemple :
-	La requête suivante sélectionne une feuille de style spéciale pour les écrans larges.
-	`@media screen and (device-aspect-ratio: 16/9), screen and (device-aspect-ratio: 16/10) { ... }`
-	La feuille de style sera utilisée lorsque le format d'affichage est 16:9 ou 16:10.
+        * Exemple :
+        La requête suivante sélectionne une feuille de style spéciale pour les écrans larges.
+        `@media screen and (device-aspect-ratio: 16/9), screen and (device-aspect-ratio: 16/10) { ... }`
+        La feuille de style sera utilisée lorsque le format d'affichage est 16:9 ou 16:10.
 * aspect-ratio : ratio de la zone d'affichage
-	* Exemple :
-	L'instruction suivante sélectionne une feuille de style spéciale à utiliser lorsque la zone d'affichage est au moins aussi large qu'elle est haute.
-	`@media screen and (min-aspect-ratio: 1/1) { ... }`
-	Ceci sélectionnera le style lorsque le format d'image est 1:1 ou supérieur.
+        * Exemple :
+        L'instruction suivante sélectionne une feuille de style spéciale à utiliser lorsque la zone d'affichage est au moins aussi large qu'elle est haute.
+        `@media screen and (min-aspect-ratio: 1/1) { ... }`
+        Ceci sélectionnera le style lorsque le format d'image est 1:1 ou supérieur.
 * device-height : dimension en hauteur du périphérique
-	* Exemple :
-	Pour appliquer une feuille de style à un document lorsqu'il est affiché sur un écran de moins de 800 pixels de long, vous pouvez utiliser ceci :
-	`<link rel="stylesheet" media="screen and (max-device-height: 799px)" />`
+        * Exemple :
+        Pour appliquer une feuille de style à un document lorsqu'il est affiché sur un écran de moins de 800 pixels de long, vous pouvez utiliser ceci :
+        `<link rel="stylesheet" media="screen and (max-device-height: 799px)" />`
 * device-width : dimension en largeur du périphérique
-	* Exemple :
-	Pour appliquer une feuille de style à un document lorsqu'il est affiché sur un écran de moins de 800 pixels de large, vous pouvez utiliser ceci :
-	`<link rel="stylesheet" media="screen and (max-device-width: 799px)" />`
+        * Exemple :
+        Pour appliquer une feuille de style à un document lorsqu'il est affiché sur un écran de moins de 800 pixels de large, vous pouvez utiliser ceci :
+        `<link rel="stylesheet" media="screen and (max-device-width: 799px)" />`
 * grid : périphérique bitmap ou grille (ex : lcd)
-	* Exemple :
-	Pour appliquer un style aux périphériques portables avec un écran de 15 caractères ou plus étroit :
-	`@media handheld and (grid) and (max-width: 15em) { ... }`
+        * Exemple :
+        Pour appliquer un style aux périphériques portables avec un écran de 15 caractères ou plus étroit :
+        `@media handheld and (grid) and (max-width: 15em) { ... }`
 * height : dimension en hauteur de la zone d'affichage
 * monochrome : périphérique monochrome ou niveaux de gris (bits/pixel)
-	* Exemple :
-	Pour appliquer une feuille de style aux périphériques monochromes avec au moins 8 bits par pixel :
-	`@media all and (min-monochrome: 8) { ... }`
+        * Exemple :
+        Pour appliquer une feuille de style aux périphériques monochromes avec au moins 8 bits par pixel :
+        `@media all and (min-monochrome: 8) { ... }`
 * orientation : orientation du périphérique (portait ou paysage)
-	* Exemple :
-	Pour appliquer une feuille de style uniquement en mode portrait :
-	`@media all and (orientation: portrait) { ... }`
+        * Exemple :
+        Pour appliquer une feuille de style uniquement en mode portrait :
+        `@media all and (orientation: portrait) { ... }`
 * resolution : résolution du périphérique (en dpi, dppx, ou dpcm)
-	* Exemple :
-	Pour appliquer une feuille de style à des périphériques avec une résolution d'au moins 300 points par pouce :
-	`@media print and (min-resolution: 300dpi) { ... }`
+        * Exemple :
+        Pour appliquer une feuille de style à des périphériques avec une résolution d'au moins 300 points par pouce :
+        `@media print and (min-resolution: 300dpi) { ... }`
 * scan : type de balayage des téléviseurs (progressive ou interlace)
-	* Exemple :
-	Pour appliquer une feuille de style uniquement aux télévisions à balayage progressif :
-	`@media tv and (scan: progressive) { ... }`
+        * Exemple :
+        Pour appliquer une feuille de style uniquement aux télévisions à balayage progressif :
+        `@media tv and (scan: progressive) { ... }`
 * width : dimension en largeur de la zone d'affichage
-	* Exemple :
-	Cette requête spécifie une feuille de style utilisable lorsque la zone d'affichage est large de 500 à 800 pixels :
-	`@media screen and (min-width: 500px) and (max-width: 800px) { ... }`
-	
+        * Exemple :
+        Cette requête spécifie une feuille de style utilisable lorsque la zone d'affichage est large de 500 à 800 pixels :
+        `@media screen and (min-width: 500px) and (max-width: 800px) { ... }`
+        
 ----------
-### Synthaxe des Media Queries
+### Syntaxe des Media Queries
 Les Media Queries possèdent une syntaxe qui permet d'affiner les critères de sélection. On peut donc combiner des  valeurs en utilisant `and`, `only` et `not`. On utilise la virgule en lieu et place du "ou" logique.
 En général, on combine un type de media à une expression avec `and`, mais on peut n'utiliser qu'une expression entre parenthèses.
 On peut déclarer les Media Queries de deux manières.
@@ -129,10 +129,10 @@ On peut déclarer les Media Queries de deux manières.
 #### <i class="icon-file"></i> Dans la page css globale
 ```css
 @media  screen and (min-width: 300px) and (max-width: 600px) {
-	body {
-		background-color:red;
-		}
-	}
+        body {
+                background-color:red;
+                }
+        }
 ```
 
 Dans l'exemple ci-dessus, on dit que si notre taille d'écran est de minimum 300px et de maximum 600px alors la class div aura un background rouge.
@@ -148,8 +148,8 @@ Dans le html :
 Dans le css : 
 ```css
 .div {
-	background-color: red;
-	}
+        background-color: red;
+        }
 ```
 --------
 Les deux codes ci-dessus font exactement la même chose.
@@ -162,7 +162,7 @@ dans le HTML :
 <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
 ```
 --------
-###Pour le posistionnement (entête, pied de page, partie principale, colonne latérale):
+###Pour le positionnement (entête, pied de page, partie principale, colonne latérale):
 
 ```css
 /* CSS Normal */
@@ -218,14 +218,14 @@ Notez que l’on peut également jouer avec background-position et background-re
 Avec ce code CSS le tableau s'étirera en longueur et créera des sous-parties les unes en dessous des autres:
 ```css
 table, tbody { 
-	display: block; 
-	}
+        display: block; 
+        }
 tr { 
-	display: table; 
-	}
+        display: table; 
+        }
 td { 
-	display: table-row; 
-	}
+        display: table-row; 
+        }
 ```
 Pour que les tableau garde ces paramètres à l'horizontal, ce qui donne un travail moins propre mais peut être plus lisible, on découpe le tableau en morceaux et on les mets les uns en dessous des autres:
 ```css
@@ -286,9 +286,9 @@ Dans le CSS:
 ```css
 body { 
 word-wrap: break-word;
-	 }
+         }
 pre { 
-	white-space: pre-wrap; 
+        white-space: pre-wrap; 
  } /* pour firefox et les <pre> */
 ```
 
@@ -318,6 +318,7 @@ Si vous utilisez des images de fond en CSS, il faudra tenir compte du pixel rati
 On voit tout de suite que l’icône sur mobile est bien plus jolie : elle est plus nette. C’est normale car en réalité elle fait 32 pixels (par exemple) et est du coup affichée sans être étirée. Sur l’ordinateur, elle est rétrécie, mais ceci n’altère pas la qualité de l’image de façon visible.
 Afin d’arriver à ce résultat, il faut évidemment utiliser une icône plus grande dès le départ : 32 pixels, dans notre exemple.
 Ensuite, on utilise très simplement du CSS pour la réduire à la taille de l’icône :
+    
 
 ```css
 #bouton-16 {
@@ -359,3 +360,16 @@ Il suffit d’appliquer une transition de durée 0s sur le right, mais différé
   transition: 0s linear .05s;
 }
 ```
+
+SOURCES - 
+http://mediaqueri.es/
+http://www.adobe.com/devnet/archive/dreamweaver/articles/introducing-media-queries.html
+tuto en français sur MDN : https://developer.mozilla.org/fr/docs/Web/CSS/Media_queries
+http://objetdirect.developpez.com/tutoriels/css/responsive-design/ > paragraphe V : Media Queries et paragraphe VI un exemple 
+http://www.alsacreations.com/article/lire/930-css3-media-queries.html > Les bases des Media Queries + Exemples + Demo
+
+Retour sur expérience:
+    
+    Les Media Queries sont un moyen d'adapter son site à tout les formats d'écrans, de le rendre responsive
+    Eviter d'utiliser la vue adaptative de Firefox pour les tests, privilégier celle de Chrome ou Chromium ! La base de la mise en forme doit d'abord etre conçue pour les mobiles
+    , à partir de là, rajouter les Media Queries pour les autres formats d'écrans. (tablette, moyen, grand écran..)
